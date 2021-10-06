@@ -1,0 +1,83 @@
+apiVersion: v1
+entries:
+  nifi:
+    - apiVersion: v2
+      appVersion: 1.12.1
+      created: "2021-10-06T04:37:49.633145089Z"
+      dependencies:
+        - condition: zookeeper.enabled
+          name: zookeeper
+          repository: https://charts.bitnami.com/bitnami
+          version: 5.23.0
+        - alias: registry
+          condition: registry.enabled
+          name: nifi-registry
+          repository: https://dysnix.github.io/charts/
+          version: 0.3.2
+        - condition: ca.enabled
+          name: ca
+          repository: ""
+          version: 1.0.1
+      description: Apache NiFi is a software project from the Apache Software Foundation
+        designed to automate the flow of data between software systems.
+      digest: f8e3d6b1be496f80ba5742b84ccf2796016829a4cfb7b4482f1f2e5f56483072
+      home: https://nifi.apache.org/
+      icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
+      keywords:
+        - nifi
+        - data
+        - process
+      maintainers:
+        - email: sebastien.dupont@cetic.be
+          name: banzo
+          url: https://github.com/banzo
+        - email: amen.ayadi@cetic.be
+          name: AyadiAmen
+          url: https://github.com/AyadiAmen
+        - email: alexandre.nuttinck@cetic.be
+          name: alexnuttinck
+          url: https://github.com/alexnuttinck
+        - email: zakaria.hajja@cetic.be
+          name: zakaria2905
+          url: https://github.com/zakaria2905
+      name: nifi
+      urls:
+        - nifi/nifi-0.7.8.1.tgz
+      version: 0.7.8.1
+    - apiVersion: v2
+      appVersion: 1.12.1
+      created: "2021-10-06T04:37:49.610499604Z"
+      dependencies:
+        - condition: zookeeper.enabled
+          name: zookeeper
+          repository: https://charts.bitnami.com/bitnami
+          version: 5.23.0
+        - alias: registry
+          condition: registry.enabled
+          name: nifi-registry
+          repository: https://dysnix.github.io/charts/
+          version: 0.3.2
+        - condition: ca.enabled
+          name: ca
+          repository: ""
+          version: 1.0.1
+      description: Apache NiFi is a software project from the Apache Software Foundation
+        designed to automate the flow of data between software systems.
+      digest: 4bbadc785a4a7eb71c23c9109da7142f63ce2644eee28e840e809ae276604fd5
+      home: https://nifi.apache.org/
+      icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizontal-scaled.png
+      keywords:
+        - nifi
+        - data
+        - process
+      maintainers:
+        - email: sebastien.dupont@cetic.be
+          name: banzo
+          url: https://github.com/banzo
+        - email: amen.ayadi@cetic.be
+          name: AyadiAmen
+          url: https://github.com/AyadiAmen
+        - email: alexandre.nuttinck@cetic.be
+          name: alexnuttinck
+          url: https://github.com/alexnuttinck
+generated: "2021-10-06T04:37:46.383543153Z"
